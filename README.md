@@ -1,23 +1,23 @@
 ## Project Phone Stand
 
-*A lightweight and functional phone stand designed in SolidWorks and optimized for 3D printing. Made in spite of me not having a good phone stand in the first place.*
+*A lightweight and functional phone stand designed in SolidWorks and optimized for 3D printing. Made in spite of not having a good phone stand in the first place.*
 
 ---
 
 ## Overview
 
-This repository contains the CAD files and documentation for a custom phone stand designed using SolidWorks (MMGS units). The stand features a pivoting back arm that allows multiple viewing angles and can be fabricated via 3D printing or CNC machining.
+This repository contains the CAD files, STL exports, and rendered images for a custom-designed phone stand created in SolidWorks using MMGS units. The project showcases key design techniques, including extrusion, filleting, and chamfering.
 
 ## Features
 
-* **Two-Part Design**: Consists of a back and a front body.
-* **Manufacturable Geometry**: All edges have fillets and chamfers to improve printability, comfort, and style.
-* **Robust Construction**: Designed for PLA or ABS plastic with a thickness optimized for stability.
+* **Two-Part Design**: Consists of a support piece and a front body.
+* **3D Printer Ready: Clean, manifold STL files included for rapid prototyping.
+* **Ergonomic Design: Filleted and chamfered edges for comfort and aesthetics.
 
 ## Tools & Techniques Used
 
-* **SolidWorks Features**: Extrude Boss/Base, Extruded Cut, Fillet, Chamfer, Circular Pattern
-* **Assembly Mates**: Concentric Mate (pivot pin)
+* **SolidWorks Features**: Extrude Boss/Base, Extruded Cut, Fillet, Chamfer
+* **Assembly Mates**: Angle Mate
 * **Units**: Millimeters, Grams, Seconds (MMGS)
 
 ## Technical Specifications
@@ -34,26 +34,30 @@ This repository contains the CAD files and documentation for a custom phone stan
 
 
 ## File Structure
-
 ```
-/PhoneStand
-├── Phone Stand Assembly.SLDASM # Assembly file
-├── STL/                       # Exported STL files for 3D printing
-│   ├── Phone Stand Back.SLDPRT
-│   └── Phone Stand Front.SLDPRT
-├── Phone Stand Back.SLDPRT    # Pivoting arm part file
-├── Phone Stand Front.SLDPRT   # Pivoting arm part file
-├── README.md                  # Project overview and instructions
-├── Stand Image 1.png          # Showcase image of assembly
-└── Stand Image 2.png          # Showcase image of assembly
+Phone-Stand-Project/
+├── Phone-Stand-Assembly.SLDASM     # Full assembly file
+├── Phone-Stand-Front.SLDPRT        # Base/front component
+├── Phone-Stand-Front.STL           # STL file for base
+├── Phone-Stand-Support.SLDPRT      # Adjustable support arm
+├── Phone-Stand-Support.STL         # STL file for arm
+├── README.md                       # Project description and instructions
+├── Stand-Image-1.png               # Render/image of final assembly
+└── Stand-Image-2.png               # Additional view/render
 ```
 
 ## Assembly Instructions
 
-1. Open `Phone Stand Assembly.SLDASM` in SolidWorks.
-2. Ensure `Phone Stand Front.SLDPRT` is fixed.
-3. Mate `Phone Stand Back.SLDPRT` with the fixed point on the front stand.
+1. Open `Phone-Stand-Assembly.SLDASM` in SolidWorks.
+2. Insert `Phone-Stand-Front.SLDPRT` and `Phone-Stand-Support.SLDPRT` into the assembly.
+3. Ensure `Phone-Stand-Front.SLDPRT` is fixed.
+4. Mate `Phone-Stand-Support.SLDPRT` with the fixed point on the front stand.
 
+## Future Improvements
+
+* Make the design have adjustable angles to view a phone at
+* Modify for tablet-sized devices with longer width
+* Look into adding wireless changing integrated into the design
 
 ## License
 
