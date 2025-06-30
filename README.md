@@ -59,6 +59,3 @@ Phone-Stand-Project/
 * Modify for tablet-sized devices with longer width
 * Look into adding wireless changing integrated into the design
 
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
